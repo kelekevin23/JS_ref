@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+body{
+    background-image: url("kepek/hatter.png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width: 1450px;
+    margin: auto;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/*section*/
+#evszakok{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;  
+}
+p{
+    font-size: 22px;
+    font-weight: bold;
+}
+#evszakok{
+    color: white;
+}
+#evszakok div{  
+    text-align: center;
+    width: 80%;
+}
+
+#tavasz{
+    background-color: lightgreen; 
+    border: 3px solid green;
+}
+#nyar{
+    background-color: rgb(224, 211, 26); 
+    border: 3px solid goldenrod;
+}
+#osz{
+    background-color: peachpuff; 
+    border: 3px solid brown;
+}
+#tel{
+    background-color: lightblue; 
+    border: 3px solid darkblue;
+}
+
+/*article*/
+article{
+    margin-right: 20px;
+}
+#tabla img{
+    width: 100%;
+}
+#tabla td{
+    width: 9%;
+}
+#tabla{
+    border: 3px solid white;
+    background-color: white;
+}
+
+
+
+/*aside*/
+#jelenEvszak{
+    border-bottom: 1px solid black;
+}
+#hatralevoIdo{
+    border-bottom: 2px solid black;
+}
+
+#kuldetesek{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+#kuldetesek img{
+    width: 100%;
+}
+.kuldetesLeiras {
+    position: relative;
+    display: inline-block;
+}
+
+.img-container {
+    position: relative;
+}
+
+.betu {
+    position: absolute;
+    top: 57%;
+    left: 90%;
+    color: white;
+}
+.pontok {
+    position: absolute;
+    top: 57%;
+    left: 70%;
+    bottom: 8px;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#aktForma{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+#gombok{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+#forgat, #tukroz{
+    border: none;
+    border-radius: 20px;
+    margin: auto;
+    padding: 0 30px 0 30px;
+    background-color: grey;
+    cursor: pointer;
+}
+
+#aktIdo{
+    text-align: center;
+}
+#aktAlakzat img{
+    width: 100%;
+}
+#aktAlakzat{
+    background-color: white;
+    width: 80%;
+    text-align: center;
+}
+#aktAlakzat td{
+    width: 33%;
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    #kuldetesek{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+}
